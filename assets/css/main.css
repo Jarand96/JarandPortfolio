@@ -402,6 +402,27 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url(http://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
   color: black;
@@ -501,16 +522,18 @@ body {
     width: 40px;
     margin: 0 auto;
     height: 5px;
-    background: #5C6BC0; }
+    background: #3F51B5; }
+  .intro h2 {
+    font-family: 'Fira Sans' , sans-serif; }
   .intro p, .intro h2 {
     text-align: center; }
   .intro p {
     text-transform: uppercase;
-    font-family: 'PT Sans' , sans-serif; }
+    font-family: 'Fira Sans' , sans-serif; }
   .intro button {
     display: block;
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 10px 15px;
     background: #3F51B5;
     color: white;
@@ -521,6 +544,4 @@ body {
     .intro button:focus {
       outline: none; }
     .intro button:hover {
-      background: #5C6BC0;
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1); }
+      background-color: #5C6BC0; }
