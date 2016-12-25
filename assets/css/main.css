@@ -404,7 +404,7 @@ template {
 
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #BD5248;
+  color: black;
   font-weight: bold; }
 
 .gigantic {
@@ -418,7 +418,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px; }
 
 .large, h2 {
-  font-size: 42px;
+  font-size: 34px;
   line-height: 1.14; }
 
 .bigger, h3 {
@@ -450,12 +450,12 @@ hr {
   height: 0; }
 
 a {
-  color: #BD5248;
+  color: black;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #d89993; }
+  color: #333333; }
 
 ::-moz-selection {
   background: #FFF498; }
@@ -486,3 +486,41 @@ body {
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+.intro {
+  background-image: url("/assets/img/geometry.png");
+  background-size: 200px 200px;
+  height: 400px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .intro hr {
+    width: 40px;
+    margin: 0 auto;
+    height: 5px;
+    background: #5C6BC0; }
+  .intro p, .intro h2 {
+    text-align: center; }
+  .intro p {
+    text-transform: uppercase;
+    font-family: 'PT Sans' , sans-serif; }
+  .intro button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 10px 15px;
+    background: #3F51B5;
+    color: white;
+    border-width: 0px;
+    box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    font-size: 12px; }
+    .intro button:focus {
+      outline: none; }
+    .intro button:hover {
+      background: #5C6BC0;
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1); }
