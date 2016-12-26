@@ -511,7 +511,8 @@ body {
 .intro {
   background-image: url("/assets/img/geometry.png");
   background-size: 200px 200px;
-  height: 400px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -545,3 +546,31 @@ body {
       outline: none; }
     .intro button:hover {
       background-color: #5C6BC0; }
+
+header {
+  background: white;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  box-shadow: 5px 0px 14px -7px rgba(0, 0, 0, 0.1); }
+
+.toggle:before {
+  content: '\2630'; }
+
+.hidden {
+  display: none; }
+
+.site-nav ul {
+  color: white;
+  list-style: none;
+  width: 135px;
+  margin: 0 auto;
+  padding-left: 0px; }
+  .site-nav ul li {
+    margin: 3px 10px; }
+    .site-nav ul li a {
+      color: rgba(0, 0, 0, 0.7);
+      text-transform: uppercase; }
+      .site-nav ul li a:hover {
+        color: white; }
