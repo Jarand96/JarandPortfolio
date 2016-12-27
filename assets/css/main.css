@@ -402,9 +402,30 @@ template {
 [hidden] {
   display: none; }
 
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Sans"), local("FiraSans-Regular"), url(http://fonts.gstatic.com/s/firasans/v5/EjsrzDkQUQCDwsBtLpcVQZBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url(http://fonts.gstatic.com/s/firasans/v5/DugPdSljmOTocZOR2CItOhampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
 .gigantic, .huge, .large, .bigger, .big,
 h1, h2, h3, h4, h5, h6 {
-  color: #BD5248;
+  color: black;
   font-weight: bold; }
 
 .gigantic {
@@ -418,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px; }
 
 .large, h2 {
-  font-size: 42px;
+  font-size: 34px;
   line-height: 1.14; }
 
 .bigger, h3 {
@@ -450,12 +471,12 @@ hr {
   height: 0; }
 
 a {
-  color: #BD5248;
+  color: black;
   text-decoration: none;
   outline: 0; }
 
 a:hover, a:focus {
-  color: #d89993; }
+  color: #333333; }
 
 ::-moz-selection {
   background: #FFF498; }
@@ -486,3 +507,87 @@ body {
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+
+.intro {
+  background-image: url("/assets/img/geometry.png");
+  background-size: 200px 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .intro hr {
+    width: 40px;
+    margin: 0 auto;
+    height: 5px;
+    background: #3F51B5; }
+  .intro h2 {
+    font-family: 'Fira Sans' , sans-serif; }
+  .intro p, .intro h2 {
+    text-align: center; }
+  .intro p {
+    text-transform: uppercase;
+    font-family: 'Fira Sans' , sans-serif; }
+  .intro button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 10px 15px;
+    background: #3F51B5;
+    color: white;
+    border-width: 0px;
+    box-shadow: 0px 10px 15px -12px rgba(0, 0, 0, 0.75);
+    transition: 0.3s;
+    font-size: 12px; }
+    .intro button:focus {
+      outline: none; }
+    .intro button:hover {
+      background-color: #5C6BC0; }
+
+header .site-nav {
+  background: white;
+  height: 100vh;
+  position: fixed;
+  width: 400px;
+  top: 0;
+  box-shadow: 5px 0px 14px -7px rgba(0, 0, 0, 0.1);
+  transition: 300ms;
+  width: 0px;
+  overflow: hidden;
+  display: block; }
+  header .site-nav i {
+    float: right;
+    cursor: pointer; }
+  header .site-nav ul {
+    background: rgba(255, 255, 255, 0.5);
+    list-style: none;
+    width: 135px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-left: 0px; }
+    header .site-nav ul li {
+      margin: 3px 10px; }
+      header .site-nav ul li a {
+        color: rgba(0, 0, 0, 0.7);
+        text-transform: uppercase; }
+        header .site-nav ul li a:hover {
+          color: black; }
+
+i {
+  color: black;
+  font-size: 50px !important; }
+
+.hidden {
+  display: none !important; }
+
+.toggle {
+  position: fixed;
+  top: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer; }
+  .toggle i {
+    font-size: 30px !important; }
