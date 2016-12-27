@@ -1,29 +1,52 @@
 header
-  background: rgba(255,255,255,1)
-  width: 200px
-  height: 100vh
+
+  .site-nav
+    background: rgba(255,255,255,1)
+    height: 100vh
+    position: fixed
+    width: 400px
+    top: 0
+    box-shadow: 5px 0px 14px -7px rgba(0,0,0,0.1)
+    transition: 300ms
+    width: 0px
+    overflow: hidden
+
+    .closenav
+    display: block
+
+    i
+      float: right
+      cursor: pointer
+    ul
+      background: rgba(255,255,255,0.5)
+      list-style: none
+      width: 135px
+      margin: 0 auto
+      margin-top: 80px
+      padding-left: 0px
+
+      li
+        margin: 3px 10px
+
+        a
+          color: rgba(0,0,0,0.7)
+          text-transform: uppercase
+          &:hover
+            color: rgba(0,0,0,1)
+
+
+i
+  color: black
+  font-size: 50px!important
+
+.hidden
+  display: none!important
+
+.toggle
   position: fixed
   top: 0
-  box-shadow: 5px 0px 14px -7px rgba(0,0,0,0.1)
-.toggle
-  &:before
-    content: '\2630'
-.hidden
-  display: none
-.site-nav
-  ul
-
-    color: white
-    list-style: none
-    width: 135px
-    margin: 0 auto
-    padding-left: 0px
-
-    li
-      margin: 3px 10px
-
-      a
-        color: rgba(0,0,0,0.7)
-        text-transform: uppercase
-        &:hover
-          color: rgba(255,255,255,1)
+  margin-left: 20px
+  margin-top: 20px
+  cursor: pointer
+  i
+    font-size: 30px!important

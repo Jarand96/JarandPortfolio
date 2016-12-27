@@ -547,30 +547,47 @@ body {
     .intro button:hover {
       background-color: #5C6BC0; }
 
-header {
+header .site-nav {
   background: white;
-  width: 200px;
   height: 100vh;
   position: fixed;
+  width: 400px;
   top: 0;
-  box-shadow: 5px 0px 14px -7px rgba(0, 0, 0, 0.1); }
+  box-shadow: 5px 0px 14px -7px rgba(0, 0, 0, 0.1);
+  transition: 300ms;
+  width: 0px;
+  overflow: hidden;
+  display: block; }
+  header .site-nav i {
+    float: right;
+    cursor: pointer; }
+  header .site-nav ul {
+    background: rgba(255, 255, 255, 0.5);
+    list-style: none;
+    width: 135px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-left: 0px; }
+    header .site-nav ul li {
+      margin: 3px 10px; }
+      header .site-nav ul li a {
+        color: rgba(0, 0, 0, 0.7);
+        text-transform: uppercase; }
+        header .site-nav ul li a:hover {
+          color: black; }
 
-.toggle:before {
-  content: '\2630'; }
+i {
+  color: black;
+  font-size: 50px !important; }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
-.site-nav ul {
-  color: white;
-  list-style: none;
-  width: 135px;
-  margin: 0 auto;
-  padding-left: 0px; }
-  .site-nav ul li {
-    margin: 3px 10px; }
-    .site-nav ul li a {
-      color: rgba(0, 0, 0, 0.7);
-      text-transform: uppercase; }
-      .site-nav ul li a:hover {
-        color: white; }
+.toggle {
+  position: fixed;
+  top: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  cursor: pointer; }
+  .toggle i {
+    font-size: 30px !important; }
