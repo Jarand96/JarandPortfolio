@@ -24,11 +24,6 @@ How to get the setup going:
 
 7. gulp - Run.
 
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
 ## Contributors
 
 Jarand Nikolai Jansen
