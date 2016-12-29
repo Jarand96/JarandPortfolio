@@ -14,6 +14,7 @@ header
       top: 0
 
     .closenav
+      display: block
       display: none
       margin-top: 18px
       font-size: 42px!important
@@ -26,14 +27,15 @@ header
   .side-list
     position: fixed
     top: 0
+    left: -300px
     height: 100vh
     background: white
     margin-left: 99px
+    display: block
     opacity: 0
     z-index: 1
     box-shadow: 10px 0px 45px -15px rgba(0,0,0,0.5)
-    display:none
-    transition: 1s ease-out
+    transition: 300ms ease-out
     ul
       background: rgba(255,255,255,1)
       list-style: none
@@ -55,5 +57,13 @@ header
           &:hover
             color: rgba(0,0,0,1)
 
-.hidden
+.hide
   display: none!important
+
+.show
+  display: block!important
+
+.reveal
+  width: 400px!important
+  opacity: 1!important
+  left: 0!important

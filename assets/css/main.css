@@ -572,6 +572,7 @@ header .side-label {
     text-align: center;
     top: 0; }
   header .side-label .closenav {
+    display: block;
     display: none;
     margin-top: 18px;
     font-size: 42px !important; }
@@ -583,13 +584,15 @@ header .side-label {
 header .side-list {
   position: fixed;
   top: 0;
+  left: -300px;
   height: 100vh;
   background: white;
   margin-left: 99px;
+  display: block;
   opacity: 0;
   z-index: 1;
   box-shadow: 10px 0px 45px -15px rgba(0, 0, 0, 0.5);
-  transition: 1s ease-out; }
+  transition: 300ms ease-out; }
   header .side-list ul {
     background: white;
     list-style: none;
@@ -598,7 +601,7 @@ header .side-list {
     margin-top: 80px;
     transition: all 0.4s  ease-out; }
     header .side-list ul li {
-      margin: 3px 10px; }
+      margin-top: 20px; }
       header .side-list ul li a {
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
@@ -609,8 +612,16 @@ header .side-list {
         header .side-list ul li a:hover {
           color: black; }
 
-.hidden {
+.hide {
   display: none !important; }
+
+.show {
+  display: block !important; }
+
+.reveal {
+  width: 400px !important;
+  opacity: 1 !important;
+  left: 0 !important; }
 
 .about {
   background: #4d2ce0;

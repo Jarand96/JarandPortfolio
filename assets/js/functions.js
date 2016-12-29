@@ -5,12 +5,14 @@ $( document ).ready(function() {
 
   //Show and hide navbar
   $('.hamburger').click(function(){
-    $('.side-list').css({'width':'400','opacity':'1'});
-    $('.site-nav > ul').addClass('show');
+    $('.closenav').addClass('show');
+    $(this).hide();
+    $('.side-list').toggleClass('reveal');
   });
-  $('.closenav > i').click(function(){
-    $('.site-nav').css('width','0');
-    $('.site-nav > ul').removeClass('show');
+  $('.closenav').click(function(){
+    $('.side-list').toggleClass('reveal');
+    $(this).removeClass('show');
+    $('.hamburger').show();
 
   });
 });
