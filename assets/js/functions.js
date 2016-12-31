@@ -1,9 +1,18 @@
 $( document ).ready(function() {
   // Get started!
-  $('.toggle').click(function(){
-    $('.site-nav').css('width','200');
+
+
+
+  //Show and hide navbar
+  $('.hamburger').click(function(){
+    $('.closenav').addClass('show');
+    $(this).hide();
+    $('.side-list').toggleClass('reveal');
   });
-  $('.closenav > i').click(function(){
-    $('.site-nav').css('width','0');
+  $('.closenav').click(function(){
+    $('.side-list').toggleClass('reveal');
+    $(this).removeClass('show');
+    $('.hamburger').show();
+
   });
 });
