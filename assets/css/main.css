@@ -515,7 +515,7 @@ body {
   background: #F6F6F8;
   font-size: 14px;
   line-height: 1.6;
-  font-family: 'Open Sans' sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #2E2D33;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -604,7 +604,6 @@ header .side-list {
     header .side-list ul li {
       margin-top: 20px; }
       header .side-list ul li a {
-        font-family: 'Montserrat', sans-serif;
         font-size: 30px;
         font-weight: 700;
         color: #c8c8c8;
@@ -626,7 +625,8 @@ header .side-list {
 
 .about {
   background: #4d2ce0;
-  margin: 0px 0px 0px 100px; }
+  margin: 0px 0px 0px 100px;
+  padding-bottom: 60px; }
   .about .headeraligner {
     display: -ms-flexbox;
     display: flex;
@@ -677,3 +677,23 @@ header .side-list {
 /*    Media screen */
 /*    @media screen and (max-width: 1419px) and (min-width: 960px)
       width: calc((100vw - 340px) / 3) */
+.articles {
+  padding-left: 100px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .articles .article-container .articleholder {
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 40px; }
+    .articles .article-container .articleholder .articledescription {
+      width: 400px;
+      display: inline-block; }
+    .articles .article-container .articleholder .articlecover {
+      display: inline-block;
+      width: 400px; }
+      .articles .article-container .articleholder .articlecover img {
+        height: 240px;
+        width: 100%;
+        object-fit: cover; }
