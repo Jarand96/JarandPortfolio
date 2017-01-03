@@ -1,0 +1,67 @@
+.work
+  background: linear-gradient(rgba(0, 134, 243, 0.7), rgba(0, 134, 243, 0.7)), url("/assets/img/Creative.jpg")
+  background-size: cover
+  display: flex
+  justify-content: center
+  padding: 60px 0px
+  .work-container
+    width: 800px
+    padding-left: 100px
+    h1
+      color: white
+      margin-top: 0px
+    .work-content
+      display: flex
+      justify-content: space-between
+      height: 340px
+      overflow: hidden
+      .work-description
+        margin-right: 20px
+        background-color: white
+        width: 45%
+        display: inline-block
+
+        .disclaimer
+          font-family: inherit
+          color: $secondary-color
+          margin: 10px 10px
+          height: 20%
+        h4
+          margin-left: 10px
+        p
+          margin: 0px 40px 0px 10px
+          font-family: 'Georgia', serif
+      .work-examples
+        display: flex
+        flex-direction: row
+        img
+          height: 100%
+          width: 100%
+          object-fit: cover
+        width: 55%
+        display: inline-block
+        .large-example
+          background-color: white
+          h4
+            margin: 5px 10px
+          p
+            margin: 0px 10px
+            font-family: 'Georgia', serif
+          img
+            height: 60%
+          width: 100%
+          height: 60%
+          margin-bottom: 20px
+        .small-example-holder
+          display: flex
+          flex-direction: row
+          justify-content: center
+          height: 38%
+          .small-example
+            width: 32%
+            margin-right: 20px
+            overflow: hidden
+            &:last-child
+              margin-right: 0px
+            img
+              height: 100%
