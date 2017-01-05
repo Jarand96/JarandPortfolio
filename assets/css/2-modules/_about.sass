@@ -2,12 +2,18 @@
   background: $primary-color
   margin: 0px 0px 0px 100px
   padding-bottom: 60px
-  .headeraligner
-    display: flex
-    justify-content: center
-    flex-direction: row
+  display: flex
+  justify-content: center
+  .about-wrapper
+    opacity: 0
+    animation:
+      name: spawn
+      duration: 1s
+      delay: 400ms
+      fill-mode: forwards
     h1
       color: white
+      margin-bottom: 0px
   .container
       display: flex
       justify-content: center
@@ -18,27 +24,56 @@
     background: white
     width: 260px
     margin: 30px
-    height: auto
+    max-height: 550px
     box-shadow: 0 46px 75px -35px rgba(0,0,0,.9)
-    transition:
+    overflow: hidden
+    transition: all 0.3s
+    display: block
+    &:nth-child(1)
+      margin-left: 0px
+    &:hover
+      h3
+        color: $secondary-color
+      .imghandler
+        height: 30px
+
+      .descriptionhandler
+        height: 100%
+        p
+          overflow: visible
 
 
+    .imghandler
+      overflow: hidden
+      height: 280px
+      transition: 300ms
     img
       height: 280px
       width: 100%
       object-fit: cover
+      transition: all 0.3s
 
     .descriptionhandler
-      padding: 0px 20px 0px 20px
-
+      padding: 0px 20px 20px 20px
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        pointer-events: none
+        background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%)
+        bottom: 0
+        left: 0
+        height: 60px
+        width: 100%
       p
         font:
           family: 'Georgia', sans-serif
           size: 16px
           weight: 300
         color: #535353
-        height: 100px!important
+        height: 120px!important
         overflow: hidden
+        margin-bottom: 0px
 
       button
         width: 80%
