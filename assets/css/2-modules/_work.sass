@@ -1,0 +1,118 @@
+.work
+  background: linear-gradient(rgba(43, 152, 114, 0.9), rgba(109, 203, 169, 0.7)), url("/assets/img/Creative.jpg")
+  background-size: cover
+  display: flex
+  justify-content: center
+  padding: 60px 0px
+  padding-left: 100px
+  width: calc(100% - 100px)
+  .work-container
+    width: 800px
+    h1
+      color: white
+      margin-top: 0px
+      margin-bottom: 50px
+    .work-content
+      display: flex
+      justify-content: space-between
+      height: 340px
+      overflow: hidden
+      .work-description
+        margin-right: 20px
+        background-color: white
+        width: 45%
+        display: inline-block
+
+        .disclaimer
+          font-family: inherit
+          color: $secondary-color
+          margin: 10px 10px
+          height: 20%
+        h4
+          margin-left: 10px
+        p
+          margin: 0px 40px 0px 10px
+          font-family: 'Georgia', serif
+      .work-examples
+        display: flex
+        flex-direction: row
+        img
+          height: 100%
+          width: 100%
+          object-fit: cover
+        width: 55%
+        display: inline-block
+        .large-example
+          background-color: white
+          width: 100%
+          height: calc(60% - 20px)
+          margin-bottom: 20px
+
+
+          .large-example-img
+            height: 60%
+            overflow: hidden
+            img
+              height: 100%
+              transition: 300ms
+
+          h4
+            margin: 5px 10px
+          p
+            margin: 0px 10px
+            font-family: 'Georgia', serif
+
+          &:hover
+            img
+              transform: scale(1.1)
+            h4
+              color: $secondary-color
+
+            cursor: pointer
+
+        .small-example-holder
+          display: flex
+          flex-direction: row
+          justify-content: center
+          height: 40%
+          overflow: hidden
+          .small-example
+            width: 33%
+            margin-right: 20px
+            overflow: hidden
+            transition: 300ms
+            &:last-child
+              margin-right: 0px
+            img
+              height: 100%
+              width: 100%
+
+            &:hover
+              transform: scale(1.1)
+              cursor: pointer
+
+  @media screen and (max-width: 920px)
+    h1
+      text-align: center
+    .work-content
+      flex-direction: column
+      height: auto!important
+      justify-content: center!important
+      align-items: center
+
+      .work-description
+        display: block!important
+        width: 360px!important
+        padding-bottom: 20px
+        clear: both
+        margin-right: 0px!important
+        margin-bottom: 20px
+        .disclaimer
+          height: auto!important
+      .work-examples
+        width: 360px!important
+        display: block!important
+        .large-example
+          img
+            height: 120px!important
+          padding-bottom: 10px
