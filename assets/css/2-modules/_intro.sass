@@ -6,7 +6,8 @@
   display: flex
   flex-direction: column
   justify-content: center
-  margin-left: 100px
+  padding-left: 100px
+  width: calc(100% - 100px)!important
 
   hr
     width: 40px
@@ -58,3 +59,9 @@
 
     &:hover
         background-color: #5C6BC0
+
+  @media screen and (max-width: 920px)
+    p
+      margin-bottom: 5px
+    h2
+      font-size: 40px

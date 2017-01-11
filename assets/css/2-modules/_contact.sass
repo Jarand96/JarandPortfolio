@@ -2,11 +2,13 @@ section.contact
   display: flex
   justify-content: center
   padding: 30px 0px
+  margin-left: 100px
+  width: calc(100% - 100px)
   background:
     image: url("/assets/img/geometry.png")
     size: 200px 200px
   .contact-content
-    padding-left: 100px
+
     p.mail
       font-size: 40px
     .media-logos
@@ -15,3 +17,6 @@ section.contact
       justify-content: center
       i
         margin-right: 15px
+  @media screen and (max-width: 920px)
+    .mail
+      font-size: 30px!important
