@@ -100,40 +100,45 @@
 
 
 
-  @media screen and (max-width: 1200px)
-    .hero
-      width: 240px
-      margin: 20px
+@media screen and (max-width: 1200px)
+  .hero
+    width: 240px
+    margin: 20px
 
-  @media screen and (max-width: 920px)
-    h1
-      text-align: center
-    .container
-      flex-direction: column!important
-    .hero
-      height: auto
-      max-height: 700px
-      width: 400px
-      margin: 20px 0px
-      padding-bottom: 20px
-
-      &:hover
-        h3
-          color: black
-        .imghandler
-          height: 280px
-
-        .descriptionhandler
+@media screen and (max-width: 920px)
+  .about
+    width: 100%!important
+    padding-left: 0px!important
+    .about-wrapper
+      h1
+        text-align: center
+      .container
+        flex-direction: column!important
+        .hero
           height: auto
-          p
-            overflow: hidden
+          max-height: 700px
+          width: 400px
+          margin: 20px 0px
+          padding-bottom: 20px
 
-      .descriptionhandler
-        p
-          height: auto
+          &:hover
+            h3
+              color: black
+            .imghandler
+              height: 280px
 
-        &:after
-          height: 0px
+            .descriptionhandler
+              height: auto
+              p
+                overflow: hidden
 
-  @media screen and (max-width: 550px)
+          .descriptionhandler
+            p
+              height: auto
+
+            &:after
+              height: 0px
+
+@media screen and (max-width: 550px)
+  .about
     width: 100%
