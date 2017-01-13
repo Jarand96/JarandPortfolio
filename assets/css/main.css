@@ -527,6 +527,10 @@ body {
 button:hover {
   background: #6DCBA9 !important; }
 
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 46px; } }
+
 @-webkit-keyframes spawn {
   from {
     opacity: 0; }
@@ -722,7 +726,9 @@ header .mobile {
   .side-label {
     display: none !important; }
   .mobile {
-    display: block !important; } }
+    display: block !important; }
+    .mobile ul {
+      padding-left: 0px !important; } }
 
 .about {
   background: #6DCBA9;
@@ -853,9 +859,19 @@ header .mobile {
         .about .about-wrapper .container .hero .descriptionhandler:after {
           height: 0px; } }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 425px) {
   .about {
-    width: 100%; } }
+    width: 100% !important; }
+    .about .about-wrapper {
+      width: 100% !important; }
+      .about .about-wrapper h1 {
+        font-size: 46px; }
+      .about .about-wrapper .container .hero {
+        width: 96%;
+        box-shadow: 0 46px 75px -35px rgba(0, 0, 0, 0.2);
+        margin-left: 2%; }
+        .about .about-wrapper .container .hero .imghandler {
+          display: none; } }
 
 .articles {
   padding: 60px 0px;
@@ -1075,8 +1091,6 @@ section.contact {
   background-size: 200px 200px; }
   section.contact .contact-content a.mail {
     font-size: 40px; }
-  section.contact .contact-content:hover section.contact {
-    background: linear-gradient(rgba(43, 152, 114, 0.9), rgba(109, 203, 169, 0.7)), url("/assets/img/geometry.png") !important; }
   section.contact .contact-content .media-logos {
     font-size: 50px;
     display: -ms-flexbox;
@@ -1092,3 +1106,15 @@ section.contact {
     width: 100% !important; }
     .contact .contact-content .mail {
       font-size: 30px !important; } }
+
+@media screen and (max-width: 768px) {
+  .contact .contact-content .mail {
+    display: block;
+    font-size: 24px !important;
+    margin-bottom: 10px !important; } }
+
+@media screen and (max-width: 425px) {
+  .contact .contact-content .mail {
+    font-size: 20px !important; }
+  .contact .contact-content .media-logos {
+    font-size: 28px !important; } }
