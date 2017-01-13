@@ -1,10 +1,17 @@
 $( document ).ready(function() {
 
-  $("ul > li > a").click(function(e) {
+  $(".side-list > ul > li > a").click(function(e) {
         // Prevent a page reload when a link is pressed
       e.preventDefault();
         // Call the scroll function
       goToByScroll(this.id);
+  });
+
+  $(".mobile > ul > li > a").click(function(e) {
+        // Prevent a page reload when a link is pressed
+      e.preventDefault();
+        // Call the scroll function
+      mobileGoToByScroll(this.id);
   });
 
 //This sequence of code shows/spawns divs when they are in the viewport
@@ -46,14 +53,27 @@ $( document ).ready(function() {
 
   //Show and hide navbar
   $('.hamburger').click(function(){
-    $('.closenav').addClass('show');
+    $('.exitnav').addClass('show');
     $(this).hide();
     $('.side-list').toggleClass('reveal');
   });
-  $('.closenav').click(function(){
+  $('.exitnav').click(function(){
     $('.side-list').toggleClass('reveal');
     $(this).removeClass('show');
     $('.hamburger').show();
+
+  });
+
+
+  $('.mobile-hamburger').click(function(){
+    $('.mobile-exitnav').addClass('show');
+    $(this).hide();
+    $('.mobile').toggleClass('mobile-reveal');
+  });
+  $('.mobile-exitnav').click(function(){
+    $('.mobile').toggleClass('mobile-reveal');
+    $(this).removeClass('show');
+    $('.mobile-hamburger').show();
 
   });
 });
@@ -63,8 +83,21 @@ function goToByScroll(id){
   id = id.replace("link", "");
 
   $('.side-list').toggleClass('reveal');
-  $('.closenav').removeClass('show');
+  $('.exitnav').removeClass('show');
   $('.hamburger').show();
+    // Scroll
+  $('html,body').animate({
+      scrollTop: $("."+id).offset().top},
+      'slow');
+}
+
+function mobileGoToByScroll(id){
+    // Remove "link" from the ID
+  id = id.replace("link", "");
+
+  $('.mobile').toggleClass('mobile-reveal');
+  $('.mobile-exitnav').removeClass('show');
+  $('.mobile-hamburger').show();
     // Scroll
   $('html,body').animate({
       scrollTop: $("."+id).offset().top},

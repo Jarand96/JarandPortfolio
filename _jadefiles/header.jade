@@ -1,7 +1,7 @@
 header
   nav.side-label
     <i class="fa fa-bars hamburger" aria-hidden="true"></i>
-    <i class="fa fa-times fa-10 closenav" aria-hidden="true"></i>
+    <i class="fa fa-times fa-10 exitnav" aria-hidden="true"></i>
 
   nav.side-list
     ul
@@ -9,3 +9,14 @@ header
       li: a#articles(href="#articles") 02 Articles
       li: a#work(href="#work") 03 Work
       li: a#contact(href="#contact") 04 Contact
+      
+  nav.mobile
+    <i class="fa fa-bars mobile-hamburger" aria-hidden="true"></i>
+    <i class="fa fa-times fa-10 mobile-exitnav" aria-hidden="true"></i>
+    ul
+      li: a#about(href="#about") 01 About
+      li: a#articles(href="#articles") 02 Articles
+      li: a#work(href="#work") 03 Work
+      li: a#contact(href="#contact") 04 Contact
+      
+  
