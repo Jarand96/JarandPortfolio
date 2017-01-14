@@ -69,21 +69,60 @@
           margin: 0 auto
           width: 400px
           img
-            height:
+            height: 200px
         .articledescription
           margin: 0 auto
-          text-align: center
           h4
             width: 100%!important
             margin-top: 10px
             margin-bottom: 15px
+            text-align: left!important
           p
             width: 100%!important
+            text-align: left
+          button
+
 
         .right-description
           padding-left: 0.1px
 
-/**
-/*@media screen and (max-width: 768px)
+
+
+@media screen and (max-width: 768px)
+    .articles
+      .article-container
+        .articleholder
+          width: auto
+          flex-wrap: wrap-reverse
+          margin-bottom: 30px
+
+          .articledescription
+            width: 370px
+
+
+@media screen and (max-width: 425px)
+    .articles
+      .article-container
+        .articleholder
+          .articlecover
+            width: 100%
+          .articledescription
+            width: 320px!important
+            padding-right: 0px!important
+            text-align: left
+            h4
+              text-align: left
+              margin-left: 10px
+              font-size: 20px
+            p
+              font-size: 12px
+              width: 300px!important
+              text-align: left
+              margin-left: 10px!important
+            button
+              margin-left: 10px
+              width: 100px
+
+
 
 /*@media screen and (max-width: 425px)

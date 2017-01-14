@@ -2,14 +2,15 @@
   background:
     image: url("/assets/img/geometry.png")
     size: 200px 200px
-  padding: 100px 0px
+  padding: 0px 0px
   display: flex
   flex-direction: column
   justify-content: center
   padding-left: 100px
   width: calc(100% - 100px)!important
-
+  height: 100vh
   hr
+    display: none
     width: 40px
     margin: 0 auto
     height: 5px
@@ -21,8 +22,10 @@
       delay: 400ms
       fill-mode: forwards
   h2
+    margin: 0 auto
     font-family: 'Montserrat' , sans-serif
     margin-top: 5px
+    font-size: 50px
     opacity: 0
     animation:
       name: spawn
@@ -30,8 +33,10 @@
       delay: 300ms
       fill-mode: forwards
   p,h2
-    text-align: center
+    text-align: left
+    margin-left: 10%
   p
+    display: none
     text-transform: uppercase
     font-family: 'Fira Sans' , sans-serif
     opacity: 0
@@ -61,6 +66,25 @@
         background-color: #5C6BC0
 
 @media screen and (max-width: 920px)
+  .intro
+    padding-left: 0px!important
+    width: 100%!important
+    p
+      margin-bottom: 5px
+    h2
+      font-size: 40px
+
+@media screen and (max-width: 768px)
+  .intro
+    padding-left: 0px!important
+    width: 100%!important
+    p
+      margin-bottom: 5px
+    h2
+      font-size: 40px
+
+
+@media screen and (max-width: 425px)
   .intro
     padding-left: 0px!important
     width: 100%!important
