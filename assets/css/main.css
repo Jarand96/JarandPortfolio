@@ -827,7 +827,7 @@ header .mobile {
         box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.5); }
 
 @media screen and (max-width: 1200px) {
-  .hero {
+  .about .about-wrapper .container .hero {
     width: 240px;
     margin: 20px; } }
 
@@ -899,7 +899,7 @@ header .mobile {
       .articles .article-container .articleholder .articledescription p {
         width: 75%; }
       .articles .article-container .articleholder .articledescription button {
-        width: 30%;
+        width: 120px;
         padding: 10px 0px;
         border: 0px;
         border-radius: 4px;
@@ -922,7 +922,7 @@ header .mobile {
       .articles .articleholder .articledescription h4 {
         width: 90% !important; }
       .articles .articleholder .articlecover img {
-        height: 100% !important; } }
+        height: 200px !important; } }
 
 @media screen and (max-width: 920px) {
   .articles {
@@ -939,7 +939,8 @@ header .mobile {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
       .articles .article-container .articleholder .articlecover {
-        margin: 0 auto; }
+        margin: 0 auto;
+        width: 400px; }
       .articles .article-container .articleholder .articledescription {
         margin: 0 auto;
         text-align: center; }
@@ -952,6 +953,9 @@ header .mobile {
       .articles .article-container .articleholder .right-description {
         padding-left: 0.1px; } }
 
+/** */
+/*@media screen and (max-width: 768px) */
+/*@media screen and (max-width: 425px) */
 .work {
   background: linear-gradient(rgba(43, 152, 114, 0.9), rgba(109, 203, 169, 0.7)), url("/assets/img/Creative.jpg");
   background-size: cover;
