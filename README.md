@@ -1,6 +1,6 @@
 ## Synopsis
 
-This is my personal portfolio. It was made with the use of jekyll, gulp, sass and Pug(Jade). 
+This is my personal portfolio. It was made using jekyll, gulp, sass and Pug(Jade). 
 
 ## Motivation
 
